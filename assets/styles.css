@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*
+   Author: Jayden Morehouse
+   Date:   April 4, 2021
+   
+*/
+
+/* Font received from: https://www.dafont.com/runescape-uf.font */
+@font-face {
+	font-family: runescapeFont;
+	src: url(fonts/runescape_uf.woff);
+  }
+
+/* Body Styles */
+
+tr {
+	height: 10px;
+}
+
+body {
+	background-color: black;
+}
+
+/* Body Styles */
+article.AboutJayden {
+	border: 2px solid rgb(79, 80, 35);
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(232, 232, 230);
+	/*text-shadow: 1px 1px red;*/
+	font-family: Arial;
+}
+
+article.JaydenContacts {
+	line-height: 30px;
+	border: 2px solid rgb(79, 80, 35);
+	border-radius: 15px;
+	background-color: rgb(232, 232, 230);
+	font-family: Arial;
+	margin: 0;
+	text-align: left;
+	font-size: 14px;
+}
+
+article.JaydenContacts a {
+	line-height: 20px;
+	font-family: Arial;
+	margin: 0;
+	text-align: left;
+	font-size: 14px;
+	text-decoration: underline;
+	color: blue;
+}
+
+
+article.JaydenSkills {
+	line-height: 30px;
+	border: 2px solid rgb(79, 80, 35);
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(225, 225, 225);
+	font-family: Arial;
+}
+
+article#jaydenresume {
+	background-color: rgb(232, 232, 230);
+	border-top: 100px;
+	border: 1px solid red;
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: rgb(255, 255, 255);
+	font-family: Arial;
+	line-height: 23px;
+}
+
+.JaydenSkills {
+	border: 2px solid rgb(79, 80, 35);
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(232, 232, 230);
+	font-family: Arial;
+}
+
+/* Footer Styles */
+
+footer, footer > p {
+	background: linear-gradient(240deg, rgb(157, 162, 126), rgb(79, 80, 35) 70%);
+	color: white;
+}
+
+/* Navigation Styles */
+nav a {
+	font-size: 48px;
+	/*background-color: rgb(8,124,124);*/
+	color: black;
+	font-family: runescapeFont;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: rgb(8,124,124);
+}
+

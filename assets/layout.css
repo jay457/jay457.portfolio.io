@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+/*
+   Author: Jayden Morehouse
+   Date:   April 4, 2021
+   
+*/
+	
+/* Nav Layout */
+nav	{
+	text-align: center;
+	display: block;
+	width: 20%;
+	height: 20%;
+	margin: 0 auto;
+
+}
+
+nav > div {
+	margin: 0 auto;
+}
+
+#draggable {
+	position: absolute;
+	z-index: 9;
+	background-color: #f1f1f1;
+	text-align: center;
+	border: 1px solid #d3d3d3;
+  }
+  
+.draggableheader {
+	cursor: move;
+	z-index: 10;
+  }
+
+/* Body Layout */
+.titlewindow {
+	position: absolute;
+	z-index: 9;
+	background-color: #f1f1f1;
+	text-align: center;
+	border: 1px solid #d3d3d3;
+	width: 300px; 
+	margin: 0 auto;
+	display: block;
+}
+
+body {
+	margin: 0px;
+}
+
+p {
+	margin: 0;
+}
+
+table {
+	border-spacing: 100px;
+}
+
+header {
+	position: fixed;
+	padding: 0px;
+	display: block;
+	width: 100%;
+    top: 0px;
+}
+
+.contain {
+	display: block;
+}
+
+.samples {
+	padding: 10px;
+	width: 90%; 
+	height: 90%;
+	margin: 0 auto;
+}
+
+.samples button {
+
+	font-size: 16px;
+}
+
+article.jobtitle p {
+	text-align: center;
+}
+
+article {
+	padding: 20px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+article.AboutJayden {
+	display: block;
+	padding: 20px;
+	width: 40%;
+	border: 100px;
+}
+
+article.AboutJayden img {
+	display: block;
+	width: 40%;
+	height: 40%;
+	margin: 0 auto;
+	padding: 0px;
+	border: 1px solid rgb(79, 80, 35);
+}
+
+article.JaydenContacts {
+	display: block;
+}
+
+article.JaydenContacts img {
+	display: block;
+	width: 12%;
+	height: 12%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+article#jaydenresume {
+	display: block;
+	padding: 20px;
+	width: 40%;
+	border: 100px;
+}
+
+/* Header and Footer Layout */
+
+footer {
+	display: block;
+	position: absolute;
+	min-height: 20px;
+	max-height: 100px;
+	width: 100%;
+	bottom: 0;
+	float: left;
+	text-align: center;
+	left: 0px;
+}
+
+header {
+	position: fixed;
+}
+
+/* Phone Styles */
+@media only screen and (max-width: 480px) {
+		
+	/* Header and Footer Styles */
+	header {
+		position: fixed;
+		padding-top: 0px;
+		display: block;
+		padding-bottom: 5px;
+		text-align: center;
+		width: 99%;
+		margin-right: auto;
+		margin-left: auto;
+	}	
+
+	footer {
+		visibility: hidden;
+	}
+	
+	/* Nav Styles */
+	nav	{
+
+		text-align: center;
+		display: block;
+		width: 60%;
+		height: 60%;
+		margin: 0 auto;
+	}
+
+	nav li {
+		display: block;	
+		padding: 0;
+		margin: 0
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		font-size: 30px;
+		text-align: left;
+	}
+
+	nav li a {
+		height: 25px;
+		width: 200px;
+		color: black;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding: 20px 50px;
+		font-size: 30px;
+	}
+
+	/* Body Styles */
+	article.AboutJayden {
+		display: block;
+		padding: 20px;
+		width: 90%;
+		border: 100px;
+	}
+
+	article.AboutJayden img {
+		display: block;
+		width: 60%;
+		height: 60%;
+		margin: 0 auto;
+		padding: 0px;
+		border: 1px solid rgb(79, 80, 35);
+	}
+	
+	article.JaydenContacts {
+		display: block;
+		width: 80%;
+		height: 80%;
+	}
+
+	article.JaydenContacts img {
+		display: block;
+		width: 43%;
+		height: 43%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	article.JaydenSkills {
+		display: block;
+		width: 90%;
+		height: 90%;
+		padding: 5px;
+	}
+
+	article#jaydenresume {
+		display: block;
+		padding: 20px;
+		width: 90%;
+		border: 100px;
+	}
+
+}
+/* Tablet Styles */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+	/* Header and Footer Styles */
+	footer {
+		visibility: hidden;
+	}
+
+	/* Nav Styles */
+	nav {
+		display: block;
+		width: 60%;
+		height: 60%;
+		margin: 0 auto;
+	}
+
+	nav ul {
+		clear: both;
+		list-style-type: none;
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	nav li a {
+		height: 100%;
+		border: 2px solid blue;
+		color: black;
+		display: block;
+		text-align: center;
+		padding: 12px 20px;
+		text-decoration: none;
+	}
+
+	/* Body Styles */
+	article.AboutJayden {
+		display: block;
+		padding: 20px;
+		width: 80%;
+		border: 100px;
+	}
+
+	article.AboutJayden img {
+		display: block;
+		width: 40%;
+		height: 40%;
+		margin: 0 auto;
+		padding: 0px;
+		border: 1px solid rgb(79, 80, 35);
+	}
+	
+	article.JaydenContacts {
+		display: block;
+		width: 60%;
+		height: 60%;
+	}
+
+	article.JaydenContacts img {
+		display: block;
+		width: 23%;
+		height: 23%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	article.JaydenSkills {
+		display: block;
+		width: 80%;
+		height: 80%;
+		padding: 5px;
+	}
+
+	article#jaydenresume {
+		display: block;
+		padding: 20px;
+		width: 80%;
+		border: 100px;
+	}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 769px) {
+
+}

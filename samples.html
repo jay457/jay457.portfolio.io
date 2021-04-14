@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+		<!--
+			Author: Jayden Morehouse
+			Date:   April 4, 2021
+		-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Jayden, Morehouse, Portfolio, Programming" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Map funcitonality from: https://leafletjs.com/ -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<script src="leaflet-rotatedmarker.js"></script>
+
+		<title>Jayden Morehouse - Work Samples</title>
+		<link href="assets/layout.css" rel="stylesheet" />
+		<link href="assets/styles.css" rel="stylesheet" />
+
+		<!--Windows 96 theme from: https://botoxparty.github.io/XP.css/ -->
+		<link rel="stylesheet" href="assets/98.css-main/style.css">
+
+		<script type="text/javascript" src="tablist.js"></script>
+	</head>
+	<body>
+		<div class="window samples">
+			<div class="title-bar">
+			  <div class="title-bar-text">Jayden Morehouse - Some Stuff I've Done</div>
+			  <div class="title-bar-controls">
+				<button aria-label="Minimize"></button>
+				<button aria-label="Maximize"></button>
+				<button aria-label="Close"></button>
+			  </div>
+			</div>
+		<section class="tabs" style="max-width: 100%">
+			<menu role="tablist" aria-label="Sample Tabs">
+				<a href="index.html" style="text-decoration: none;"> <button aria-selected="true" aria-controls="tab-return">Return To Home Menu</button></a>
+			  	<button role="tab" aria-controls="tab-PM">Project Management</button>
+			  	<button role="tab" aria-controls="tab-Android">Android</button>
+			  	<button role="tab" aria-controls="tab-JavaScript">JavaScript</button>
+				<button role="tab" aria-controls="tab-CSharp">C#</button>
+			</menu>
+
+			<!-- the tab content -->
+			<article role="tabpanel" id="tab-PM">
+				<p style="font-size: 24px;">Here is a PowerPoint PDF containing Project Management work samples:</p>
+				<iframe src="assets/documents/ProjectManagementSample.pdf" width="90%" height="800px">
+				</iframe>
+			</article>
+			<article role="tabpanel" hidden id="tab-Android">
+
+				<p style="font-size: 24px;">The 2021 Capstone team project was Project SCRAPBOOK, 
+					a game about using photos to battle! <a href="https://github.com/adamhemeon/Project-SCRAPBook.git">GitHub Here!</a> </p>
+				<iframe width="720" height="480" src="https://www.youtube.com/embed/qDa35J4LGsM" title="Project SCRAPBook YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<p style="font-size: 24px; padding-top: 40px;">PowerPoint PDF containing work sample from my MOBI3002 course.</p>
+				<iframe src="assets/documents/AndroidSample.pdf" width="50%" height="500px">
+					
+				</iframe>
+
+			</article>
+			<article role="tabpanel" hidden id="tab-JavaScript" style="height: 1000px;">
+				<h3>Halifax, Nova Scotia Bus Viewer Made with Leaflet and OpenStreetMap</h3>
+				<h4>Displays buses on Halifax map and if map is fully loaded, buses will update every few seconds (if map isn't loading, try at a different window size). This was
+					created for Assignment 3 of my PROG2700 course, where it received a perfect score.
+				</h4>
+				<div id="map-wrapper" style="width: 100%; height:100%;">
+					<div id="theMap" style="width: 80%; height:80%;"></div>
+				</div>
+				<script src='busmapsample.js'></script>
+			</article>
+			<article role="tabpanel" hidden id="tab-CSharp">
+				<p style="font-size: 24px;">The image below depicts a notes application developed for my PROG2500 course, which featured UWP and .NET 
+				developement. This simple notes app received a perfect score (100%). </p>
+				<img src="assets/NotesAppSample.PNG" alt="The Creation of a Note in NotesApp" style="width: 40%;">
+				<img src="assets/NotesAppDeleteSample.PNG" alt="The Deletion of a Note in NotesApp" style="width: 40%;">
+
+				<p style="font-size: 24px; padding-top: 40px;">As seen in the code sample below, the notes application utilizes SQL databases to store and manipulate notes, which also demonstrates my knowledge in SQL.
+				It includes full CRUD functionality (create, read, update, and delete).</p>
+				<img src="assets/ReadNoteCodeSample.PNG" alt="The Code for the Reading of Notes in NotesApp" style="width: 40%;">
+				<img src="assets/DeleteNoteCodeSample.PNG" alt="The Code for the Deletion of a Note in NotesApp" style="width: 40%;">
+				<img src="assets/InsertUpdateNoteCodeSample.PNG" alt="The Code for the Insertion/Updating of a Note in NotesApp" style="width: 50%;">
+				
+
+
+			</article>
+		  </section>
+		</div>
+	</div>
+	</body>	
+</html>
